@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="abcs" />
+        <module name="admin-server" />
+        <module name="apps" />
+        <module name="apps-service" />
+        <module name="config-server" />
+        <module name="discover-server" />
+        <module name="discover-server-china" />
+        <module name="discover-server-us" />
+        <module name="discovery-server" />
+        <module name="discoveryserver" />
+        <module name="discoveryservernoauth" />
+        <module name="gateway-server-china" />
+        <module name="micioservices" />
+        <module name="msp-api-mock" />
+        <module name="msp-api-mocker" />
+        <module name="sidecar-agent" />
+        <module name="sidecar-serviceA" />
+        <module name="sidecar-serviceB" />
+        <module name="springdata" />
+        <module name="swagger-server" />
+        <module name="tenants" />
+        <module name="tenants-service" />
+        <module name="user-services" />
+        <module name="zipkin-server" />
+      </profile>
+      <profile default="false" name="Annotation profile for learning" enabled="true">
+        <sourceOutputDir name="../learning/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../learning/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="learning" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="abcs" target="1.5" />
+      <module name="admin-server" target="1.8" />
+      <module name="app-services" target="1.8" />
+      <module name="apps" target="1.8" />
+      <module name="apps-service" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="demo-a-service-china" target="1.8" />
+      <module name="demo-a-service-us" target="1.8" />
+      <module name="demo-b-service-china" target="1.8" />
+      <module name="demo-b-service-us" target="1.8" />
+      <module name="demo-c-service-china" target="1.8" />
+      <module name="discover-server" target="1.8" />
+      <module name="discover-server-china" target="1.8" />
+      <module name="discover-server-china (1)" target="1.8" />
+      <module name="discover-server-us" target="1.8" />
+      <module name="discovery-server" target="1.8" />
+      <module name="discovery-server-china" target="1.8" />
+      <module name="discovery-server-us" target="1.8" />
+      <module name="discoveryserver" target="1.8" />
+      <module name="discoveryservernoauth" target="1.8" />
+      <module name="gateway-server" target="1.8" />
+      <module name="gateway-server-china" target="1.8" />
+      <module name="gateway-server-us" target="1.8" />
+      <module name="learning" target="1.8" />
+      <module name="micioservices" target="1.8" />
+      <module name="msp-api-mock" target="1.8" />
+      <module name="msp-api-mocker" target="1.8" />
+      <module name="sidecar-agent" target="1.8" />
+      <module name="sidecar-service" target="1.8" />
+      <module name="sidecar-serviceA" target="1.8" />
+      <module name="sidecar-serviceB" target="1.8" />
+      <module name="SpringCloud-Infra" target="1.8" />
+      <module name="SpringCloudDemo" target="1.8" />
+      <module name="SpringCloudDemo-infra" target="1.8" />
+      <module name="springdata" target="1.8" />
+      <module name="swagger-server" target="1.8" />
+      <module name="tenants" target="1.8" />
+      <module name="tenants-service" target="1.8" />
+      <module name="user-services" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

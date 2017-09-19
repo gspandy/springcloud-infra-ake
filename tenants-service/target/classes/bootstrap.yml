@@ -1,0 +1,28 @@
+
+server:
+  port: 9001
+
+spring:
+  application:
+#    name: tenantservice  # 应用名称必须保证全局唯一
+    name: pcsd-madp-ad-auth # 应用名称必须保证全局唯一
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/littlemujiang/springcloud-config.git
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+    Service-url:
+#      defaultZone: http://admin:123456@localhost:8761/eureka/
+      defaultZone: http://10.96.83.154:8761/eureka/
+
+#      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: false

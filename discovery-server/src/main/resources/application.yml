@@ -1,0 +1,49 @@
+server:
+  port: 8761
+
+spring:
+  application:
+          name: discoveryserver
+
+eureka:
+  instance:
+    hostname: localhost
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+#    availability-zones: china
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  server:
+      waitTimeInMsWhenSyncEmpty: 0
+
+
+#spring:
+#  profiles: peer2
+#eureka:
+#  instance:
+#    hostname: localhost
+#    metadata-map:
+#      zone: us
+#      instanceId: ${spring.application.name}:${random.value}
+#  client:
+##    availability-zones: china
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#            defaultZone: http://${eureka.instance.hostname}:8762/eureka/
+#  server:
+#      waitTimeInMsWhenSyncEmpty: 0
+
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: 123456
+

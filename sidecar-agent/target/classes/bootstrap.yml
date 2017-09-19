@@ -1,0 +1,42 @@
+
+server:
+  port: 5678
+  cloud:
+      config:
+        discovery:
+          enabled: true
+          Service-id: configserver
+
+spring:
+  application:
+    name: sidecar-agent  # 应用名称,必须保证全局唯一
+
+
+sidecar:
+  port: 9000
+  health-uri: http://localhost:${sidecar.port}/health
+#  hostname: serviceA
+#  ip-address:
+
+
+eureka:
+  instance:
+#    preferIpAddress: true
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+    Service-url:
+#      defaultZone: http://admin:123456@localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500
+

@@ -1,0 +1,10 @@
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/util/TokenUtil.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/controler/UserSecureController.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/controler/UserMgmtController.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/util/UserUtil.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/entity/ResponseDiscription.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/entity/User.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/config/MongodbConfig.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/dao/UserDao.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/controler/UserAdminController.java
+/Users/epcm/Documents/MSP/codes/SpringCloudDemo/user-services/src/main/java/service/UserService.java
