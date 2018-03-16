@@ -4,13 +4,13 @@ server:
 
 spring:
   application:
-    name: configserver  # 应用名称必须保证全局唯一
+    name: config-server  # 应用名称必须保证全局唯一
   cloud:
     config:
       server:
         git:
           uri: https://github.com/littlemujiang/springcloud-config.git
-
+#          search-paths: test
 
 eureka:
   instance:
@@ -18,6 +18,9 @@ eureka:
       instanceId: ${spring.application.name}
   client:
     Service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
     healthcheck:
       enabled: true
+    fetchRegistry: true
+    register-with-eureka: true
+

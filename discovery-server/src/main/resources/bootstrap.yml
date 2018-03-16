@@ -1,0 +1,29 @@
+server:
+  port: 8761
+
+spring:
+  application:
+      name: discovery-server
+
+eureka:
+  instance:
+    hostname: localhost-8761
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value}
+    lease-renewal-interval-in-seconds: 5      # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 10  # 发呆时间，即服务续约到期时间（缺省为90s）
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+
+security:
+  basic:
+    enabled: false
+#management:
+#  security:
+#    enabled: false

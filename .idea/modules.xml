@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringCloud-Infra.iml" filepath="$PROJECT_DIR$/SpringCloud-Infra.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin-server/admin-server.iml" filepath="$PROJECT_DIR$/admin-server/admin-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/apps-service/apps-service.iml" filepath="$PROJECT_DIR$/apps-service/apps-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/discovery-server/discoveryserver.iml" filepath="$PROJECT_DIR$/discovery-server/discoveryserver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway-server/gateway-server-china.iml" filepath="$PROJECT_DIR$/gateway-server/gateway-server-china.iml" />
-      <module fileurl="file://$PROJECT_DIR$/msp-api-mocker/msp-api-mocker.iml" filepath="$PROJECT_DIR$/msp-api-mocker/msp-api-mocker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sidecar-agent/sidecar-agent.iml" filepath="$PROJECT_DIR$/sidecar-agent/sidecar-agent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sidecar-serviceA/sidecar-serviceA.iml" filepath="$PROJECT_DIR$/sidecar-serviceA/sidecar-serviceA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sidecar-serviceB/sidecar-serviceB.iml" filepath="$PROJECT_DIR$/sidecar-serviceB/sidecar-serviceB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server-ha/discovery-server-ha.iml" filepath="$PROJECT_DIR$/discovery-server-ha/discovery-server-ha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/gateway-server/gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infra-core/infra-core.iml" filepath="$PROJECT_DIR$/infra-core/infra-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/swagger-server/swagger-server.iml" filepath="$PROJECT_DIR$/swagger-server/swagger-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tenants-service/tenants-service.iml" filepath="$PROJECT_DIR$/tenants-service/tenants-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-services/user-services.iml" filepath="$PROJECT_DIR$/user-services/user-services.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/zipkin-server/zipkin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vehicle-service/user-service (1).iml" filepath="$PROJECT_DIR$/vehicle-service/user-service (1).iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,22 @@
+
+server:
+  port: 9002
+
+spring:
+  application:
+    name: vehicle-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/littlemujiang/springcloud-config.git
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value}
+  client:
+    Service-url:
+      defaultZone:  http://localhost:8761/eureka/,http://localhost:8762/eureka/

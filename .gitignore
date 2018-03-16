@@ -2,3 +2,5 @@
 .idea/workspace.xml
 SpringCloudDemo.iml
 *.iml
+*.class
+*.jar

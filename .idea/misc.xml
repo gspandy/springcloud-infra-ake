@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/user-services/pom.xml" />
-        <option value="$PROJECT_DIR$/msp-api-mocker/pom.xml" />
+        <option value="$PROJECT_DIR$/infra-core/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server-ha/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/vehicle-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/abcs/pom.xml" />
-        <option value="$PROJECT_DIR$/apps/pom.xml" />
-        <option value="$PROJECT_DIR$/sidecar-service/pom.xml" />
+        <option value="$PROJECT_DIR$/msp-api-mocker/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin-server/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -1,19 +1,5 @@
 package service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-import javax.servlet.http.HttpServletRequest;
-
 
 /**
  * Created by epcm on 2017/6/22.
@@ -31,7 +17,7 @@ public class AppController {
 //    @RequestMapping(value="/app-service/apps/{appID}" , method= RequestMethod.GET)
 //    public String showApp( @PathVariable String appID){
 //
-////        Timestamp now = new Timestamp(System.currentTimeMillis());
+////        Timestamp now = new Timestamp(System.currentTimeMillis());∂
 ////		System.out.println("~~~~~~  now:   "+ now.getTime() );
 //
 //
