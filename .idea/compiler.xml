@@ -17,6 +17,7 @@
         <module name="swagger-server" />
         <module name="user-service" />
         <module name="user-service (1)" />
+        <module name="vehicle-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +41,7 @@
       <module name="user-service" target="1.6" />
       <module name="user-service (1)" target="1.6" />
       <module name="user-services" target="1.6" />
+      <module name="vehicle-service" target="1.6" />
       <module name="zipkin-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>

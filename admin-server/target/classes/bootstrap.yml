@@ -4,47 +4,32 @@ server:
 
 spring:
   application:
-    name: AdminServerApplication  # 应用名称必须保证全局唯一
+    name: admin-server  # 应用名称必须保证全局唯一
   cloud:
     config:
       discovery:
         enabled: true
-        Service-id: ConfigServer   # location of the configuration server
-  zipkin:
-    enabled: false
+        service-id: config-server   # location of the configuration server
   boot:
     admin:
       routes:
-        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream
+        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents
 
 eureka:
   instance:
     metadata-map:
-      instanceId: ${spring.application.name}
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+      instanceId: ${spring.application.name}:${random.value}
+#    leaseRenewalIntervalInSeconds: 1
+#    leaseExpirationDurationInSeconds: 2
   client:
-    Service-url:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
+    fetchRegistry: true
+    register-with-eureka: true
 
-management:
-  security:
+security:
+  basic:
     enabled: false
-
-
-#spring.sleuth.sampler.percentage=0.1
-#spring.zipkin.enabled=true
-#spring.zipkin.base-url=http://localhost:9001
-
-#eureka.instance.non-secure-port=${server.port:8888}
-#eureka.instance.metadata-map.instanceId=${spring.application.name}:${random.value}
-
-#eureka.client.serviceUrl.defaultZone=http://10.120.121.19:8761/eureka/
-#eureka.client.serviceUrl.defaultZone=http://10.100.83.223:8761/eureka/,http://10.100.83.74:8761/eureka/
-#eureka.instance.status-page-url-path=/health
-
-#management.context-path=/actuator
-
-#logging.file=/usr/local/madp/logs/boot-admin-sample.log
+#management:
+#  security:
+#    enabled: false

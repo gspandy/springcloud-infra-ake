@@ -4,14 +4,15 @@ server:
 
 spring:
   application:
-    name: config-server  # 应用名称必须保证全局唯一
+    name: config-server
+    admin:
+      enabled: true
   cloud:
     config:
       server:
         git:
           uri: https://github.com/littlemujiang/springcloud-config.git
 #          search-paths: test
-
 
 eureka:
   instance:
@@ -24,4 +25,3 @@ eureka:
       enabled: true
     fetchRegistry: true
     register-with-eureka: true
-

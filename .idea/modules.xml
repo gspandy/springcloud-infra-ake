@@ -10,7 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/infra-core/infra-core.iml" filepath="$PROJECT_DIR$/infra-core/infra-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/swagger-server/swagger-server.iml" filepath="$PROJECT_DIR$/swagger-server/swagger-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vehicle-service/user-service (1).iml" filepath="$PROJECT_DIR$/vehicle-service/user-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/vehicle-service/vehicle-service.iml" filepath="$PROJECT_DIR$/vehicle-service/vehicle-service.iml" />
     </modules>
   </component>
 </project>
