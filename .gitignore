@@ -4,3 +4,5 @@ SpringCloudDemo.iml
 *.iml
 *.class
 *.jar
+target
+.target
