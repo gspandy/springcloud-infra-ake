@@ -14,4 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface UserMgmtServiceClient {
     @RequestMapping(value = "/users/{userid}" , method = RequestMethod.GET)
     String getUserInfo(@PathVariable("userid") String userid ) ;
+
+    @RequestMapping(value = "/users/{userid}/unstable" , method = RequestMethod.GET)
+    String getUserInfoByUnstable(@PathVariable("userid") String userid ) ;
 }

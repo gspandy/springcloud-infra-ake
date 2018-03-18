@@ -13,6 +13,14 @@ spring:
         git:
           uri: https://github.com/littlemujiang/springcloud-config.git
 #          search-paths: test
+        monitor:
+          github:
+            enabled: true
+    bus:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
 
 eureka:
   instance:
@@ -25,3 +33,8 @@ eureka:
       enabled: true
     fetchRegistry: true
     register-with-eureka: true
+    cache-refresh-executor-thread-pool-size: 1000
+
+management:
+  security:
+    enabled: false

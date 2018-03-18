@@ -8,7 +8,7 @@ spring:
   cloud:
     config:
       discovery:
-        enabled: true
+        enabled: false
         service-id: config-server   # location of the configuration server
   boot:
     admin:

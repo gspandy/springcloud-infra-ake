@@ -9,13 +9,11 @@
     <file url="file://$PROJECT_DIR$/discovery-server-ha" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infra-core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sidecar-agent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sidecar-serviceA" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sidecar-serviceB" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/swagger-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tenants-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user-services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service-gray" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
   </component>
 </project>

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin-server" />
         <module name="config-server" />
+        <module name="config-server (1)" />
         <module name="discover-server" />
         <module name="discovery-server" />
         <module name="discovery-server (1)" />
@@ -17,13 +18,16 @@
         <module name="swagger-server" />
         <module name="user-service" />
         <module name="user-service (1)" />
+        <module name="user-service-gray" />
         <module name="vehicle-service" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin-server" target="1.6" />
       <module name="apps" target="1.8" />
       <module name="config-server" target="1.6" />
+      <module name="config-server (1)" target="1.6" />
       <module name="discover-server" target="1.6" />
       <module name="discovery-server" target="1.6" />
       <module name="discovery-server (1)" target="1.6" />
@@ -40,9 +44,10 @@
       <module name="tenants" target="1.8" />
       <module name="user-service" target="1.6" />
       <module name="user-service (1)" target="1.6" />
+      <module name="user-service-gray" target="1.6" />
       <module name="user-services" target="1.6" />
       <module name="vehicle-service" target="1.6" />
-      <module name="zipkin-server" target="1.8" />
+      <module name="zipkin-server" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

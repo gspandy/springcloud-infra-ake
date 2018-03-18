@@ -10,7 +10,11 @@ spring:
      discovery:
         enabled: true
         service-id: config-server
-
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 eureka:
   instance:
@@ -20,3 +24,20 @@ eureka:
   client:
     Service-url:
       defaultZone:  http://localhost:8761/eureka/,http://localhost:8762/eureka/
+
+#hystrix:
+#  metrics:
+#    polling-interval-ms: 5000
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
