@@ -18,7 +18,6 @@ import java.util.Random;
  * Created by mujiang on 2017/9/12.
  */
 
-@Configuration
 @RefreshScope
 @RestController
 @RequestMapping("/users")
