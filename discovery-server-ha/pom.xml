@@ -2,16 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>mujiang.Service.demo</groupId>
+    <groupId>org.citic.iiot</groupId>
     <artifactId>discovery-server-ha</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.citic.iiot</groupId>
         <artifactId>infra-core</artifactId>
         <version>1.0</version>
+        <relativePath>../infra-core</relativePath>
     </parent>
-
 
    <dependencies>
 

@@ -47,7 +47,7 @@
       <module name="user-service-gray" target="1.6" />
       <module name="user-services" target="1.6" />
       <module name="vehicle-service" target="1.6" />
-      <module name="zipkin-server" target="1.6" />
+      <module name="zipkin-server" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

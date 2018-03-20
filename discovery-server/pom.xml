@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>mujiang.Service.demo</groupId>
+    <groupId>org.citic.iiot</groupId>
     <artifactId>discovery-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
