@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by 李恒名 on 2016/10/12.
+ * Created by mujiang
  */
 @Api(value = "计算服务",description="简单的计算服务，提供加减乘除运算API")
 @RestController

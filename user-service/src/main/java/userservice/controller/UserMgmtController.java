@@ -8,6 +8,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import userservice.service.UserMgmtService;
 
@@ -20,6 +21,7 @@ import java.util.Random;
 @Configuration
 @RefreshScope
 @RestController
+@RequestMapping("/users")
 public class UserMgmtController {
 
     private Logger logger = LoggerFactory.getLogger(UserMgmtController.class);
@@ -31,7 +33,7 @@ public class UserMgmtController {
     @Autowired
     private UserMgmtService userMgmtService;
 
-    @GetMapping(value= "/users/{userid}")
+    @GetMapping(value= "/{userid}")
     public String  getUser(@PathVariable String userid){
 
         logger.info("Enter getUserInfo controller");
@@ -44,7 +46,7 @@ public class UserMgmtController {
 
      }
 
-    @GetMapping(value= "/users/{userid}/unstable")
+    @GetMapping(value= "/{userid}/unstable")
     public String  getUserByUnstable(@PathVariable String userid){
         String userinfo = "";
 

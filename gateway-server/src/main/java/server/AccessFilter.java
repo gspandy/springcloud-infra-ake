@@ -11,7 +11,6 @@ import org.springframework.cloud.netflix.ribbon.apache.RibbonApacheHttpRequest;
 import org.springframework.cloud.netflix.zuul.filters.route.RibbonRoutingFilter;
 
 import javax.servlet.http.HttpServletRequest;
-import java.text.SimpleDateFormat;
 
 /**
  * Created by chenxl7 on 2017/10/10.
@@ -38,7 +37,7 @@ public class AccessFilter extends ZuulFilter {
 		HttpServletRequest request = requestContext.getRequest();
 		String userType = request.getHeader("UserType");
 		if(userType != null ){
-			return true;
+			return false;
 		}else {
 			return false;
 		}
@@ -54,15 +53,15 @@ public class AccessFilter extends ZuulFilter {
 		HttpServletRequest request = requestContext.getRequest();
 
 //		String requestURI = request.getRequestURI().toString();
-//		String appKey = request.getHeader("MSP-AppKey");
-//		String authKey = request.getHeader("MSP-AuthKey");
+//		String appKey = request.getHeader("AppKey");
+//		String authKey = request.getHeader("AuthKey");
 
 
-		if (request.getHeader("UserType").equals("gray") ) {
-			RibbonFilterContextHolder.getCurrentContext()
-					.add("lancher", "gray");
+		if (request.getHeader("UserType") != null && request.getHeader("UserType").equals("gray") ) {
+			RibbonFilterContextHolder.getCurrentContext().add("deploy", "gray");
+		}else {
+			RibbonFilterContextHolder.getCurrentContext().add("deploy","normal");
 		}
-
 		return null;
 	}
 

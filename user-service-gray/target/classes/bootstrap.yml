@@ -25,7 +25,7 @@ eureka:
   instance:
     preferIpAddress: true
     metadata-map:
-      lancher: gray
+      deploy: gray
       instanceId: ${spring.application.name}:${random.value}
   client:
     Service-url:

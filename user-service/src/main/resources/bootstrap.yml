@@ -11,7 +11,7 @@ spring:
         enabled: true
         service-id: config-server
     bus:
-      enabled: false
+      enabled: true
   rabbitmq:
     host: localhost
     port: 5672
@@ -25,6 +25,7 @@ eureka:
   instance:
     preferIpAddress: true
     metadata-map:
+      deploy: normal
       instanceId: ${spring.application.name}:${random.value}
   client:
     Service-url:

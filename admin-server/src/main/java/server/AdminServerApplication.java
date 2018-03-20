@@ -18,13 +18,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 //@EnableAutoConfiguration
 public class AdminServerApplication {
 
-	private static final Logger LOG = Logger.getLogger(AdminServerApplication.class.getName());
-	
-
     public static void main( String[] args )
     {
-//    	System.out.print("+++++++++++++"+new ConfigRead().getName());
         SpringApplication.run(AdminServerApplication.class, args);
-
     }
 }

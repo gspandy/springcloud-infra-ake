@@ -22,7 +22,6 @@ public class VehicleMgmtController {
 
     private Logger logger = LoggerFactory.getLogger(VehicleMgmtController.class);
 
-
     @Autowired
     private VehicleMgmtService carMgmtService;
 
@@ -31,7 +30,6 @@ public class VehicleMgmtController {
 
     @Autowired
     private UserMgmtServiceBreaker userMgmtServiceBreaker;
-
 
     @GetMapping(value= "/users/{userid}/cars/{carid}")
     public String  getCarInfo(@PathVariable String userid, @PathVariable String carid){

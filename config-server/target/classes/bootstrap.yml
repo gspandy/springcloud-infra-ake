@@ -6,7 +6,7 @@ spring:
   application:
     name: config-server
     admin:
-      enabled: true
+      enabled: false
   cloud:
     config:
       server:

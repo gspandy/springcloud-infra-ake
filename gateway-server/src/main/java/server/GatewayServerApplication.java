@@ -24,6 +24,4 @@ public class GatewayServerApplication {
 	public AccessFilter accessFilter() {
 		return new AccessFilter();
 	}
-
-	
 }
